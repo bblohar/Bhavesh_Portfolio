@@ -1,0 +1,212 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-image: url('3.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+#hero {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    text-align: center;
+}
+/* #hero .profile-image {
+    width: 200px;
+    height: 200px;
+    /* border-radius: 50%;
+    float: left;
+    margin-right: 20px; }*/
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    animation: fadeInUp 1s ease; /* Apply animation here */
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section-content {  /* Styles for all section content */
+    /* max-width: 1000px;
+    margin: 20 auto; /* Consistent margin */
+     padding: 30px;
+    margin: 0;
+    background-image: url('3.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+#about {
+    text-align: center;
+}
+#about .profile-image {
+    width: 200px;
+    height: 200px;
+    /* border-radius: 50%;
+    float: left;
+    margin-right: 20px; */
+}
+
+#skills {
+    text-align: center;
+}
+#contact {
+    text-align: center;
+}
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact input, #contact textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent white background */
+    color: white; /* Text color white */ 
+    color: rgba(255, 255, 255, 0.7); /* Slightly transparent white placeholder text */
+
+}
+
+#contact button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social-links {
+    bottom: 30px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+  }
+
+  .social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #8f2727;
+  }
+
+  .social-links img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.2s;
+  }
+
+  .social-links img:hover {
+    transform: scale(1.2);
+  }
+  .container {
+    padding: 20px;
+  }
+
+  .description {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #333;
+  }
+
+  .slideshow-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .slide {
+    display: block;
+  }
+
+  .slide img {
+    width: 400px; /* Adjust the width as needed */
+    height: 450px; /* Maintain aspect ratio */
+    border-style: 100%; /* Make it circular (optional) */
+    margin-top: 20px; /* Add some space below the image */
+    display: block; /* Prevents image from affecting text flow */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .profile-image {
+    width: 400px; /* Adjust the width as needed */
+    height: 450px; /* Maintain aspect ratio */
+    border-style: 100%; /* Make it circular (optional) */
+    margin-bottom: 20px; /* Add some space below the image */
+    display: block; /* Prevents image from affecting text flow */
+    margin-left: auto;
+    margin-right: auto;
+}
+#hero {
+    text-align: center;
+}

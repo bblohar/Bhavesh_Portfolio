@@ -1,0 +1,197 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-image: url('3.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-color: rgba(240, 236, 236, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+#hero {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    text-align: center;
+}
+/* #hero .profile-image {
+    width: 200px;
+    height: 200px;
+    /* border-radius: 50%;
+    float: left;
+    margin-right: 20px; }*/
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    animation: fadeInUp 1s ease; /* Apply animation here */
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section-content {  /* Styles for all section content */
+    /* max-width: 1000px;
+    margin: 20 auto; /* Consistent margin */
+     padding: 30px;
+    margin: 0;
+    background-image: url('3.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-color: rgba(207, 199, 199, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* Basic Styling for Certificate Items */
+.certificate{
+    text-align: center;
+}
+.certificate-item {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically align items */
+}
+.certificate-image {
+    max-width: 200px; /* Adjust as needed */
+    margin-right: 10px;
+}
+.certificate-details {
+    flex-grow: 1; /* Allow details to take up available space */
+}
+.certificate-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.certificate-links {
+    margin-top: 10px; /* Add some spacing */
+}
+.project {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+form input,
+        form textarea {
+            width: calc(100% - 22px); /* Account for padding and border */
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            /* background-image: url('3.jpg'); 
+            background-size: cover; */
+            background-color: rgba(17, 17, 17, 0.5);
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+        }
+        form textarea {
+        /* background-image: url('3.jpg');   
+            background-size: cover; */
+            background-color: rgba(10, 10, 10, 0.5);
+            height: 150px;
+        }
+        form button {
+            background-color: #007bff; /* Blue button */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        .social-links {
+            bottom: 30px;
+            flex-grow: 1;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            padding: 100px 0;
+          }
+          
+          .social-links a {
+            margin: 0 10px;
+          }
+#contact {
+    text-align: center;
+}
+#contact button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#cetificate {
+    text-align: center;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Portfolio</title>
+    <link rel="stylesheet" href="PCC.css">
+    <style>
+        #contact input,
+        #contact textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.2); /* Slightly more visible background */
+            color: white;
+        }
+
+        #contact input::placeholder,
+        #contact textarea::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* #contact { /* Style the entire contact section */
+            /* display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
+            padding: 20px; Add some padding
+
+        .section-content { /* Style the content container */
+            width: 80%; /* Adjust width as needed */
+            max-width: 600px; /* Set a maximum width */
+            background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent black background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column; /* Stack button and icons vertically */
+            align-items: center; /* Center horizontally */
+            margin-top: 20px; /* Add some top margin */
+        }
+
+        .button-container button {
+            margin-bottom: 10px; /* Space between button and icons */
+            padding: 10px 20px; /* Adjust button padding */
+            background-color: #4CAF50; /* Example green color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center; /* Center the icons */
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .social-links img {
+            width: 30px;
+            height: 30px;
+        }
+
+        /* Responsive design - make the form look good on smaller screens */
+        @media (max-width: 400px) {
+            .section-content {
+                width: 95%;
+            }
+
+            #contact input,
+            #contact textarea {
+                width: 95%; /* Make input fields take full width */
+                box-sizing: border-box; /* Include padding and border in element's total width and height */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="certificates.html">Certificates</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="contact">
+        <div class="section-content">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+
+                <div class="button-container">
+                    <button type="submit">Send Message</button>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank"><img src="instagram-removebg-preview.png" alt="Instagram"></a>
+                        <a href="https://facebook.com" target="_blank"><img src="facebook-removebg-preview.png" alt="Facebook"></a>
+                        <a href="https://linkedin.com" target="_blank"><img src="linkdil-removebg-preview.png" alt="LinkedIn"></a>
+                        <a href="mailto:bhaveshblohar25@gmail.com"><img src="gmail-removebg-preview.png" alt="Gmail"></a>
+                        <a href="https://github.com/bblohar" target="_blank"><img src="icons8-github-30.png" alt="GitHub"></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        const form = document.getElementById('contact-form');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = form.name.value;
+            const email = form.email.value;
+            const message = form.message.value;
+
+            const mailtoLink = `mailto:bhaveshblohar25@gmail.com?subject=Contact from Portfolio&body=Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
+
+            window.location.href = mailtoLink;
+
+            form.reset();
+
+        });
+    </script>
+
+</body>
+</html>

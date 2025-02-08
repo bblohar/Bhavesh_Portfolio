@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <title>Skills - Portfolio</title> <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="certificates.html">Certificates</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="about" class="page-content">  <div class="section-content">  
+            <h2>About Me</h2>
+            <h3>C++ || Python || DSA || AI&ML || Full Stack developer ||</h3>
+            <h4>Artificial Intelligence & Machine Learning Engineering Student @NMIMS Shirpur</h4>
+             <p>cyber security| in Coding, Leadership, and Communication | </p>
+             <p> Diligent & Hardworking | Creative Problem Solver | Committed to continuous learning and seeking industrial knowledge. </p>
+             <p>Passionate about shaping the future of AI | Love to work on projects that have a positive impact on society.</p>
+             <p>Let's connect and explore the possibilities together!etc.</p>
+            
+    
+        <!-- Slideshow -->
+        <div class="slideshow-container">
+          <div class="slide">
+            <img src="PXL_20241101_131934538.PORTRAIT.jpg" alt="Image 1">
+          </div>
+          <div class="slide">
+            <img src="PXL_20241101_131934538.PORTRAIT~2.jpg" alt="Image 2">
+          </div>
+          <div class="slide">
+            <img src="PXL_20241101_143904511.PORTRAIT~2.jpg" alt="Image 3">
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      // Slideshow JavaScript
+      let slideIndex = 0;
+  
+      function showSlides() {
+        const slides = document.querySelectorAll('.slide');
+        slides.forEach((slide) => (slide.style.display = 'none'));
+        slideIndex++;
+        if (slideIndex > slides.length) slideIndex = 1;
+        slides[slideIndex - 1].style.display = 'block';
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+      }
+  
+      showSlides();
+    </script>
+  
+</body>
+</html>
