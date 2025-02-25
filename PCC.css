@@ -42,7 +42,6 @@ nav a {
 nav a:hover {
     color: #007bff;
 }
-
 #hero {
     flex-grow: 1;
     display: flex;
