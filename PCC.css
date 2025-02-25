@@ -1,10 +1,9 @@
-/* style.css */
 body {
     font-family: sans-serif;
     margin: 0;
     background-image: url('3.jpg'); /* Replace with your image path */
     background-size: cover;
-    background-color: rgba(240, 236, 236, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Darker overlay for better text contrast */
     color: white;
     display: flex;
     flex-direction: column;
@@ -49,15 +48,10 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 0;
+    padding: 100px 20px; /* Add horizontal padding for smaller screens */
     text-align: center;
 }
-/* #hero .profile-image {
-    width: 200px;
-    height: 200px;
-    /* border-radius: 50%;
-    float: left;
-    margin-right: 20px; }*/
+
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
@@ -66,7 +60,7 @@ nav a:hover {
 h1 {
     font-size: 3em;
     margin-bottom: 10px;
-    animation: fadeInUp 1s ease; /* Apply animation here */
+    animation: fadeInUp 1s ease;
 }
 
 h2 {
@@ -91,44 +85,185 @@ p {
     }
 }
 
-.section-content {  /* Styles for all section content */
-    /* max-width: 1000px;
-    margin: 20 auto; /* Consistent margin */
-     padding: 30px;
-    margin: 0;
-    background-image: url('3.jpg'); /* Replace with your image path */
+.section-content {
+    padding: 30px 20px; /* Add horizontal padding for smaller screens */
+    background-image: url('3.jpg');
     background-size: cover;
-    background-color: rgba(207, 199, 199, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Darker overlay */
     color: white;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-/* Basic Styling for Certificate Items */
-.certificate{
+
+#about, #skills, #contact, #certificate {
     text-align: center;
 }
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Make it circular */
+    margin: 20px auto; /* Center the image */
+    display: block;
+}
+
+/* ... (Previous styles from the combined CSS) ... */
+
+#contact {
+    text-align: center; /* Center the content within the section */
+}
+
+#contact .section-content {
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly darker background for better contrast */
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 800px; /* Adjust the max-width as needed */
+    margin: 0 auto; /* Center the content */
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact input, #contact textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    box-sizing: border-box;
+    width: calc(100% - 22px);
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Add smooth transitions */
+}
+
+#contact input:focus, #contact textarea:focus {
+    background-color: rgba(255, 255, 255, 0.3); /* Slightly lighter background on focus */
+    outline: none; /* Remove default focus outline */
+    border-color: #007bff; /* Highlight border on focus */
+}
+
+#contact textarea {
+    height: 150px; /* Increased textarea height */
+}
+
+#contact button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px; /* Increased button padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add smooth transition */
+}
+
+#contact button:hover {
+    background-color: #020c18; /* Darker shade of blue on hover */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Add spacing above social links */
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+.social-links a:hover {
+    transform: translateY(-3px); /* Slightly lift the icon on hover */
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+/* ... (Responsive styles) ... */
+.social-links {
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0; /* Reduced padding for responsiveness */
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+.container {
+    padding: 20px;
+}
+
+.description {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #333;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.slide img {
+    width: 100%; /* Make images responsive */
+    max-height: 450px; /* Maintain aspect ratio */
+    object-fit: contain; /* Prevent distortion */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px;
+}
+
 .certificate-item {
     border: 1px solid #ccc;
     margin-bottom: 20px;
     padding: 10px;
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Vertically align items */
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Stack items on small screens */
 }
+
 .certificate-image {
-    max-width: 200px; /* Adjust as needed */
-    margin-right: 10px;
+    max-width: 150px;
+    margin-bottom: 10px; /* Add spacing below image */
 }
+
 .certificate-details {
-    flex-grow: 1; /* Allow details to take up available space */
+    text-align: center; /* Center details on small screens */
 }
+
 .certificate-title {
     font-weight: bold;
     margin-bottom: 5px;
 }
+
 .certificate-links {
-    margin-top: 10px; /* Add some spacing */
+    margin-top: 10px;
 }
+
 .project {
     margin-bottom: 20px;
     padding: 15px;
@@ -139,59 +274,19 @@ p {
 .project img {
     max-width: 100%;
     height: auto;
-}
-form input,
-        form textarea {
-            width: calc(100% - 22px); /* Account for padding and border */
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            /* background-image: url('3.jpg'); 
-            background-size: cover; */
-            background-color: rgba(17, 17, 17, 0.5);
-            box-sizing: border-box; /* Include padding and border in element's total width and height */
-        }
-        form textarea {
-        /* background-image: url('3.jpg');   
-            background-size: cover; */
-            background-color: rgba(10, 10, 10, 0.5);
-            height: 150px;
-        }
-        form button {
-            background-color: #007bff; /* Blue button */
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        form button:hover {
-            background-color: #0056b3; /* Darker blue on hover */
-        }
-        .social-links {
-            bottom: 30px;
-            flex-grow: 1;
-            display: block;
-            justify-content: center;
-            align-items: center;
-            padding: 100px 0;
-          }
-          
-          .social-links a {
-            margin: 0 10px;
-          }
-#contact {
-    text-align: center;
-}
-#contact button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 15px;
-    border: none;
     border-radius: 5px;
-    cursor: pointer;
 }
-#cetificate {
-    text-align: center;
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .certificate-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
