@@ -3,8 +3,7 @@ body {
     margin: 0;
     background-image: url('3.jpg'); /* Replace with your image path */
     background-size: cover;
-    background-attachment: fixed; /* Prevents background from scrolling */
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Darker overlay for better text contrast */
     color: white;
     display: flex;
     flex-direction: column;
@@ -13,7 +12,7 @@ body {
 
 nav {
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px 0; /* Reduced vertical padding for better mobile view */
+    padding: 10px;
     position: fixed;
     top: 0;
     left: 0;
@@ -29,7 +28,7 @@ nav ul {
 }
 
 nav li {
-    display: inline-block; /* Changed to inline-block for better spacing control */
+    display: inline;
     margin: 0 15px;
 }
 
@@ -49,7 +48,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 20px;
+    padding: 100px 20px; /* Add horizontal padding for smaller screens */
     text-align: center;
 }
 
@@ -87,39 +86,40 @@ p {
 }
 
 .section-content {
-    padding: 30px 20px;
+    padding: 30px 20px; /* Add horizontal padding for smaller screens */
     background-image: url('3.jpg');
     background-size: cover;
-    background-attachment: fixed; /* Prevents background from scrolling */
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Darker overlay */
     color: white;
     display: flex;
     flex-direction: column;
-    min-height: auto; /* Changed to auto to fit content */
-    align-items: center;
-    justify-content: center;
+    min-height: 100vh;
 }
 
-#about, #skills, #contact, #certificate, #projects {
+#about, #skills, #contact, #certificate {
     text-align: center;
-    width: 100%; /* Ensure sections take full width */
-    max-width: 1200px; /* Limit maximum width for larger screens */
 }
 
 .profile-image {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
-    margin: 20px auto;
+    border-radius: 50%; /* Make it circular */
+    margin: 20px auto; /* Center the image */
     display: block;
 }
 
+/* ... (Previous styles from the combined CSS) ... */
+
+#contact {
+    text-align: center; /* Center the content within the section */
+}
+
 #contact .section-content {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly darker background for better contrast */
     border-radius: 10px;
     padding: 30px;
-    max-width:1200px;
-    margin: 20px auto; /* Added margin for better spacing */
+    max-width: 800px; /* Adjust the max-width as needed */
+    margin: 0 auto; /* Center the content */
 }
 
 #contact h2 {
@@ -139,54 +139,78 @@ p {
     background-color: rgba(255, 255, 255, 0.2);
     color: white;
     box-sizing: border-box;
-    width: 100%; /* Changed to 100% for full width on all devices */
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    width: calc(100% - 22px);
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Add smooth transitions */
 }
 
 #contact input:focus, #contact textarea:focus {
-    background-color: rgba(255, 255, 255, 0.3);
-    outline: none;
-    border-color: #007bff;
+    background-color: rgba(255, 255, 255, 0.3); /* Slightly lighter background on focus */
+    outline: none; /* Remove default focus outline */
+    border-color: #007bff; /* Highlight border on focus */
 }
 
 #contact textarea {
-    height: 150px;
+    height: 150px; /* Increased textarea height */
 }
 
 #contact button {
     background-color: #007bff;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 20px; /* Increased button padding */
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /* Add smooth transition */
 }
 
 #contact button:hover {
-    background-color: #020c18;
+    background-color: #020c18; /* Darker shade of blue on hover */
 }
 
 .social-links {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 30px; /* Add margin bottom for better spacing */
+    margin-top: 20px; /* Add spacing above social links */
 }
 
 .social-links a {
     display: inline-block;
     margin: 0 10px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Add smooth transition */
 }
 
 .social-links a:hover {
-    transform: translateY(-3px);
+    transform: translateY(-3px); /* Slightly lift the icon on hover */
 }
 
 .social-links img {
     width: 30px;
     height: 30px;
+}
+
+/* ... (Responsive styles) ... */
+.social-links {
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0; /* Reduced padding for responsiveness */
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
 }
 
 .container {
@@ -206,10 +230,10 @@ p {
 }
 
 .slide img {
-    width: 100%;
-    max-height: 450px;
-    object-fit: contain;
-    border-radius: 10px;
+    width: 100%; /* Make images responsive */
+    max-height: 450px; /* Maintain aspect ratio */
+    object-fit: contain; /* Prevent distortion */
+    border-radius: 10px; /* Rounded corners */
     margin-bottom: 20px;
 }
 
@@ -218,17 +242,17 @@ p {
     margin-bottom: 20px;
     padding: 10px;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column; /* Stack items on small screens */
 }
 
 .certificate-image {
     max-width: 150px;
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Add spacing below image */
 }
 
 .certificate-details {
-    text-align: center;
+    text-align: center; /* Center details on small screens */
 }
 
 .certificate-title {
@@ -264,21 +288,5 @@ p {
         flex-direction: column;
         align-items: center;
         text-align: center;
-    }
-
-    #hero {
-        padding: 80px 10px;
-    }
-
-    h1 {
-        font-size: 2.5em;
-    }
-
-    h2 {
-        font-size: 1.8em;
-    }
-
-    p {
-        font-size: 1em;
     }
 }
