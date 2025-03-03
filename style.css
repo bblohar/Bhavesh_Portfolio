@@ -270,6 +270,7 @@ p {
 /* Projects */
 
 .project {
+    display: center;
     margin-bottom: 20px;
     padding: 15px;
     border: 1px solid #ddd;
