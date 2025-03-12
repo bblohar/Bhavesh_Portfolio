@@ -124,6 +124,7 @@ p {
 
 #contact {
     text-align: center;
+    max-width: 1800px;
 }
 
 #contact .section-content {
@@ -141,6 +142,7 @@ p {
 #contact form {
     display: flex;
     flex-direction: column;
+    max-width: 1800px;
 }
 
 #contact input,
